@@ -10,6 +10,22 @@ dependencies. MCP uses the official [newline-delimited JSON-RPC stdio transport]
 belongs to `com-junkawasaki/west-manifest/manifest/repos.edn`. The generator writes
 `manifest/west.yml`; Kagami maintains the fleet database, ledger and signed head.
 
+## Public discovery
+
+The [Kotoba Registry](https://github.com/kotoba-lang/kotoba-registry) publishes
+this command's skill and MCP connection definition in Hermes Registry format.
+Use its [index.json](https://raw.githubusercontent.com/kotoba-lang/kotoba-registry/main/index.json)
+and [llms.txt](https://raw.githubusercontent.com/kotoba-lang/kotoba-registry/main/llms.txt)
+for discovery, then read the selected entry from one pinned registry commit and
+verify its folder checksum. The runtime remains in this repository; the MCP
+definition invokes the installed `forest-maintenance mcp` command on PATH.
+Catalog publication and client configuration are separate steps.
+
+See [the ownership ADR](adr/0001-kotoba-registry-reference.md). Repository
+registration and pins remain in this repository's `manifest/repos.edn` and
+signed genpon; extension discovery is separate from Kotoba language package
+admission and from runtime permissions.
+
 ## Install for Codex, Claude and Hermes bots
 
 After these files are merged and the canonical manifest checkout is updated:

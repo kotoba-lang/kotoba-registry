@@ -4,6 +4,8 @@ description: Audit and safely organize local repositories, worktrees, WIP, stash
 metadata: {"hermes":{"version":"1.0.0","author":"com-junkawasaki","source":"https://github.com/com-junkawasaki/west-manifest/tree/e481916ad720e10af8526774d668a6dae0cae488","compatibility":{"hermes":"0.21.5","desktop":"0.7.14"}}}
 ---
 
+Published skill and MCP definitions are discovered through [Kotoba Registry](https://github.com/kotoba-lang/kotoba-registry) and its [catalog](https://raw.githubusercontent.com/kotoba-lang/kotoba-registry/main/index.json). Read the [registry agent contract](https://raw.githubusercontent.com/kotoba-lang/kotoba-registry/main/llms-full.txt) when installing or updating a client. Verify a selected entry's checksum from one pinned registry commit; discovery grants no permissions. This repository remains the command and west-manifest authority.
+
 Use `forest-maintenance` on PATH (provided by `github/com-junkawasaki/west-manifest/bin/forest-maintenance`), or MCP `github-forest` tools `forest_audit`, `forest_plan`, `forest_apply`, `forest_verify`, `forest_workspace`, `forest_pin`, `forest_register`, `forest_start`, `forest_job_status`. Use persisted jobs for fleet-sized operations that exceed client deadlines. CLI and MCP share the same implementation. Read [the command and recovery reference](references/forest-maintenance.md) for the selected operation.
 
 Repositories belong at `github/<org>/<repo>`, task worktrees at `github/wt/<agent>/<task>`, scratch at `github/workspaces/<agent>/<task>`. Use `forest_workspace` for new tasks. Separate west workspaces belong at `github/workspaces/west/<task>` with their own `.west/config`. Keep agent credentials, settings, databases, sessions and caches in application directories.

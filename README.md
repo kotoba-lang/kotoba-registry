@@ -7,6 +7,10 @@ catalog format as [Hermes Registry](https://github.com/hermesonehq/hermes-regist
 MCP entries contain `manifest.json`. Checksums use the Hermes algorithm:
 SHA-256 over sorted relative file paths and bytes, each followed by a NUL byte.
 
+Start with [llms.txt](llms.txt) for agent discovery, [llms-full.txt](llms-full.txt)
+for the installation and verification contract, and
+[ADR-0001](docs/adr/0001-kotoba-extension-registry.md) for ownership and publication.
+
 ## Registered entries
 
 - `github-forest-maintenance`: preserve WIP and organize repositories,
