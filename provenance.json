@@ -1,5 +1,5 @@
 {
-  "status": "catalog-publication-prepared",
+  "status": "extension-catalog",
   "owner": "com-junkawasaki/west-manifest",
   "commit": "e481916ad720e10af8526774d668a6dae0cae488",
   "format": "hermesonehq/hermes-registry",
