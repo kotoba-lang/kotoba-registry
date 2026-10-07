@@ -1,0 +1,38 @@
+{
+  "schemaVersion": "1",
+  "generated": "2026-10-07T10:36:21.945Z",
+  "count": 2,
+  "entries": [
+    {
+      "id": "github-forest",
+      "type": "mcp",
+      "name": "GitHub Forest Maintenance",
+      "version": "1.0.0",
+      "description": "Audit and safely organize local Git repositories, worktrees and WIP through nine guarded MCP tools.",
+      "author": "com-junkawasaki",
+      "source": "https://github.com/com-junkawasaki/west-manifest/tree/e481916ad720e10af8526774d668a6dae0cae488",
+      "path": "mcp/github-forest",
+      "checksum": "sha256:3a56a940b976286d553bfaba61c2b4b180ba1b7b7c634e64866db7b7c762008c",
+      "compatibility": {
+        "hermes": "0.21.5",
+        "desktop": "0.7.14"
+      }
+    },
+    {
+      "id": "github-forest-maintenance",
+      "type": "skill",
+      "category": "software-development",
+      "name": "github-forest-maintenance",
+      "version": "1.0.0",
+      "description": "Audit and safely organize local repositories, worktrees, WIP, stashes and integrated branches across the github org/repo forest; reconcile the independently owned west manifest through CLI or MCP. Use for scattered agent workspaces and fleet checkout cleanup.",
+      "author": "com-junkawasaki",
+      "source": "https://github.com/com-junkawasaki/west-manifest/tree/e481916ad720e10af8526774d668a6dae0cae488",
+      "path": "skills/software-development/github-forest-maintenance",
+      "checksum": "sha256:3c3541343cf25cba1951cbb6610de5124349587584ba80e980684e3b86a85c92",
+      "compatibility": {
+        "hermes": "0.21.5",
+        "desktop": "0.7.14"
+      }
+    }
+  ]
+}
